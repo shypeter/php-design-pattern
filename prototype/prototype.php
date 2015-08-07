@@ -23,6 +23,8 @@ $obj = new Prototype();
 $obj->object1 = new SubObject();
 $obj->object2 = new SubObject();
 
-$obj2 = clone $obj;
+$obj2 = $obj;
+var_dump($obj2);
 
+$obj2 = clone $obj;
 var_dump($obj2);
